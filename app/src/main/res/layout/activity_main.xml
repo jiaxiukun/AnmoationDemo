@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <ImageView
+        android:id="@+id/image_anim"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/image_anim">
+        <Button
+            android:onClick="alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/alphe_id"
+            android:text="透明渐变"/>
+        <Button
+            android:onClick="rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rotate_id"
+            android:text="旋转360°"/>
+        <Button
+            android:onClick="scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scale_id"
+            android:text="伸缩"/>
+        <Button
+            android:onClick="translate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/translate_id"
+            android:text="平移"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll">
+        <Button
+            android:text="ValueAnimator2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ValueAnimator2"
+            android:id="@+id/valueanimator1"/>
+        <Button
+            android:text="二维码页面"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/but2"
+
+            />
+
+    </LinearLayout>
+</RelativeLayout>
